@@ -1,0 +1,84 @@
+@font-face {
+    font-family: fot-tsukubrdgothic-std;
+    font-weight: bold;
+    src: url("/font/b.otf") format("opentype");
+}
+
+@font-face {
+    font-family: fot-tsukubrdgothic-std;
+    src: url("/font/r.otf") format("opentype");
+}
+
+:root{
+    --green: #264421;
+    --bright:#55954a;
+}
+
+body {
+    font-family: fot-tsukubrdgothic-std;
+    background-color: #f0f5f1;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--green);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--green);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--bright);
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
